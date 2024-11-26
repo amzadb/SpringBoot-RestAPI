@@ -33,7 +33,8 @@ The application will start on http://localhost:8080
 ## API Endpoints
 1. **/api/nocontent <br> Method: GET <br> Description: Returns HTTP 204 No Content. <br> Curl Command:** <br>
 ```sh
-curl -X GET http://localhost:8080/api/nocontent -H "Authorization: Bearer valid-token"
+    - Indented item
+    - curl -X GET http://localhost:8080/api/nocontent -H "Authorization: Bearer valid-token"
 ```
 1. First item
 2. Second item
