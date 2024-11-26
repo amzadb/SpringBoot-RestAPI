@@ -100,14 +100,14 @@ The application will start on http://localhost:8080
    * Method: GET
    * URL: http://localhost:8080/api/nocontent
    * Headers:
-      * Authorization: Bearer valid-token
+      * Authorization: <code>Bearer valid-token</code>
       
 2. **/api/echo**
    * Method: POST
    * URL: http://localhost:8080/api/echo
    * Headers:
-      * Authorization: Bearer valid-token
-      * Content-Type: application/json
+      * Authorization: <code>Bearer valid-token</code>
+      * Content-Type: <code>application/json</code>
     * Body:
       ```
         {
@@ -123,8 +123,8 @@ The application will start on http://localhost:8080
    * Method: POST
    * URL: http://localhost:8080/api/device
    * Headers:
-      * Authorization: Bearer valid-token
-      * Content-Type: application/json
+      * Authorization: <code>Bearer valid-token</code>
+      * Content-Type: <code>application/json</code>
    * Body:
      ```
         {
@@ -137,5 +137,5 @@ The application will start on http://localhost:8080
         }
      ```
 ### Notes:
-* Ensure that the Authorization header is set correctly with the value Bearer valid-token.
-* The application uses an in-memory H2 database, which is configured in the application.properties file.
+* Ensure that the Authorization header is set correctly with the value <code>Bearer valid-token</code>.
+* The application uses an in-memory H2 database, which is configured in the <code>application.properties</code> file.
