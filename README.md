@@ -35,7 +35,15 @@ The application will start on http://localhost:8080
    * Method: GET
    * Description: Returns HTTP 204 No Content.
    * Curl Command:
-```sh
-      - curl -X GET http://localhost:8080/api/nocontent -H "Authorization: Bearer valid-token"
-```
+   * ```sh
+     - curl -X GET http://localhost:8080/api/nocontent -H "Authorization: Bearer valid-token"
+     ```
 
+2. **/api/echo**
+   * Method: POST
+   * Description: Returns HTTP 200 and the original payload.
+   * Sample Payload
+   * Curl Command:
+   * ```sh
+     - curl -X GET http://localhost:8080/api/nocontent -H "Authorization: Bearer valid-token"
+     ```
