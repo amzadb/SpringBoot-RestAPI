@@ -20,14 +20,14 @@ cd SpringBoot-RestAPI
 
 
 ## Build the Application
-``sh
+```sh
 mvn clean install
 ```
 
 ## Run the Application
 ```sh
 mvn spring-boot:run
-```sh
+```
 
 The application will start on http://localhost:8080
 
@@ -38,4 +38,4 @@ Description: Returns HTTP 204 No Content.
 Curl Command
 ```sh
 curl -X GET http://localhost:8080/api/nocontent -H "Authorization: Bearer valid-token"
-```sh
+```
