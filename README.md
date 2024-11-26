@@ -1,6 +1,7 @@
 # SpringBoot-RestAPI
 
 This is a demo Spring Boot application that provides a REST API for handling payloads.
+This `README.md` file provides clear instructions on how to clone the repository, build and run the application, and interact with the API using both curl commands and Postman.
 
 ## Prerequisites
 
@@ -15,16 +16,18 @@ This is a demo Spring Boot application that provides a REST API for handling pay
 ```sh
 git clone https://github.com/amzadb/SpringBoot-RestAPI.git
 cd SpringBoot-RestAPI
+```sh
 
-This `README.md` file provides clear instructions on how to clone the repository, build and run the application, and interact with the API using both curl commands and Postman.
 
 ## Build the Application
-```sh
+``sh
 mvn clean install
+```sh
 
 ## Run the Application
 ```sh
 mvn spring-boot:run
+```sh
 
 The application will start on http://localhost:8080
 
@@ -35,3 +38,4 @@ Description: Returns HTTP 204 No Content.
 Curl Command
 ```sh
 curl -X GET http://localhost:8080/api/nocontent -H "Authorization: Bearer valid-token"
+```sh
