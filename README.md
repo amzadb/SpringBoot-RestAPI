@@ -36,14 +36,24 @@ The application will start on http://localhost:8080
    * Description: Returns HTTP 204 No Content.
    * Curl Command:
      ```sh
-       - curl -X GET http://localhost:8080/api/nocontent -H "Authorization: Bearer valid-token"
+       curl -X GET http://localhost:8080/api/nocontent -H "Authorization: Bearer valid-token"
      ```
 
 2. **/api/echo**
    * Method: POST
    * Description: Returns HTTP 200 and the original payload.
-   * Sample Payload
+   * Sample Payload:
+   ```sh
+       {
+         "RecordType": "xxx",
+         "DeviceId": "357370040159770",
+         "EventDateTime": "2014-05-12T05:09:48Z",
+         "FieldA": 68,
+         "FieldB": "xxx",
+         "FieldC": 123.45
+       }
+   ```
    * Curl Command:
      ```sh
-       - curl -X GET http://localhost:8080/api/nocontent -H "Authorization: Bearer valid-token"
+       curl -X GET http://localhost:8080/api/nocontent -H "Authorization: Bearer valid-token"
      ```
