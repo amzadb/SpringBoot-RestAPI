@@ -31,7 +31,8 @@ mvn spring-boot:run
 The application will start on http://localhost:8080
 
 ## API Endpoints
-1. **/api/nocontent <br> Method: GET <br> Description: Returns HTTP 204 No Content. <br> Curl Command:** <br>
+1. **/api/nocontent**
+   *Method: GET <br> Description: Returns HTTP 204 No Content. <br> Curl Command:*
 ```sh
     - Indented item
     - curl -X GET http://localhost:8080/api/nocontent -H "Authorization: Bearer valid-token"
