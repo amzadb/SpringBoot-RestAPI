@@ -16,13 +16,13 @@ This `README.md` file provides clear instructions on how to clone the repository
 ```sh
 git clone https://github.com/amzadb/SpringBoot-RestAPI.git
 cd SpringBoot-RestAPI
-```sh
+```
 
 
 ## Build the Application
 ``sh
 mvn clean install
-```sh
+```
 
 ## Run the Application
 ```sh
