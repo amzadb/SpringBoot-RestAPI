@@ -55,5 +55,69 @@ The application will start on http://localhost:8080
    ```
    * Curl Command:
      ```sh
-       curl -X GET http://localhost:8080/api/nocontent -H "Authorization: Bearer valid-token"
+       curl -X POST http://localhost:8080/api/echo \
+            -H "Authorization: Bearer valid-token" \
+            -H "Content-Type: application/json" \
+            -d '{
+               "RecordType": "xxx",
+               "DeviceId": "357370040159770",
+               "EventDateTime": "2014-05-12T05:09:48Z",
+               "FieldA": 68,
+               "FieldB": "xxx",
+               "FieldC": 123.45
+            }'
      ```
+
+3. **/api/device**
+   * Method: POST
+   * Description: Returns HTTP 200 and only the <code>DeviceId</code> field
+   * Sample Payload:
+   ```sh
+       {
+         "RecordType": "xxx",
+         "DeviceId": "357370040159770",
+         "EventDateTime": "2014-05-12T05:09:48Z",
+         "FieldA": 68,
+         "FieldB": "xxx",
+         "FieldC": 123.45
+       }
+   ```
+   * Curl Command:
+     ```sh
+         curl -X POST http://localhost:8080/api/device \
+              -H "Authorization: Bearer valid-token" \
+              -H "Content-Type: application/json" \
+              -d '{
+                 "RecordType": "xxx",
+                 "DeviceId": "357370040159770",
+                 "EventDateTime": "2014-05-12T05:09:48Z",
+                 "FieldA": 68,
+                 "FieldB": "xxx",
+                 "FieldC": 123.45
+              }'
+     ```
+
+## Using Postman
+1. /api/nocontent
+  * Method: GET
+  * URL: http://localhost:8080/api/nocontent
+  * Headers:
+    * Authorization: Bearer valid-token
+2. /api/echo
+  * Method: POST
+  * URL: http://localhost:8080/api/echo
+  * Headers:
+    * Authorization: Bearer valid-token
+    * Content-Type: application/json
+  * Body:
+3. /api/device
+  * Method: POST
+  * URL: http://localhost:8080/api/device
+  * Headers:
+    * Authorization: Bearer valid-token
+    * Content-Type: application/json
+  * Body:
+
+### Notes:
+* Ensure that the Authorization header is set correctly with the value Bearer valid-token.
+* The application uses an in-memory H2 database, which is configured in the application.properties file.
