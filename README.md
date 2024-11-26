@@ -13,5 +13,5 @@ This is a demo Spring Boot application that provides a REST API for handling pay
 ### Clone the Repository
 
 ```sh
-git clone <repository-url>
-cd <repository-directory>
+git clone [<repository-url>](https://github.com/amzadb/SpringBoot-RestAPI.git)
+cd [<repository-directory>](SpringBoot-RestAPI)
