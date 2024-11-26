@@ -99,18 +99,18 @@ The application will start on http://localhost:8080
 
 ## Using Postman
 1. **/api/nocontent**
-  * Method: GET
-  * URL: http://localhost:8080/api/nocontent
-  * Headers:
-    * Authorization: Bearer valid-token
+   * Method: GET
+   * URL: http://localhost:8080/api/nocontent
+   * Headers:
+      * Authorization: Bearer valid-token
       
 2. **/api/echo**
-  * Method: POST
-  * URL: http://localhost:8080/api/echo
-  * Headers:
-    * Authorization: Bearer valid-token
-    * Content-Type: application/json
-  * Body:
+   * Method: POST
+   * URL: http://localhost:8080/api/echo
+   * Headers:
+      * Authorization: Bearer valid-token
+      * Content-Type: application/json
+    * Body:
     ```
       {
          "RecordType": "xxx",
@@ -122,13 +122,13 @@ The application will start on http://localhost:8080
       }
     ```
 3. **/api/device**
-  * Method: POST
-  * URL: http://localhost:8080/api/device
-  * Headers:
-    * Authorization: Bearer valid-token
-    * Content-Type: application/json
-  * Body:
-    ```
+   * Method: POST
+   * URL: http://localhost:8080/api/device
+   * Headers:
+      * Authorization: Bearer valid-token
+      * Content-Type: application/json
+   * Body:
+   ```
       {
          "RecordType": "xxx",
          "DeviceId": "357370040159770",
@@ -137,7 +137,7 @@ The application will start on http://localhost:8080
          "FieldB": "xxx",
          "FieldC": 123.45
       }
-    ```
+   ```
 ### Notes:
 * Ensure that the Authorization header is set correctly with the value Bearer valid-token.
 * The application uses an in-memory H2 database, which is configured in the application.properties file.
