@@ -13,5 +13,25 @@ This is a demo Spring Boot application that provides a REST API for handling pay
 ### Clone the Repository
 
 ```sh
-git clone [<repository-url>](https://github.com/amzadb/SpringBoot-RestAPI.git)
-cd [<repository-directory>](SpringBoot-RestAPI)
+git clone https://github.com/amzadb/SpringBoot-RestAPI.git
+cd SpringBoot-RestAPI
+
+This `README.md` file provides clear instructions on how to clone the repository, build and run the application, and interact with the API using both curl commands and Postman.
+
+## Build the Application
+```sh
+mvn clean install
+
+## Run the Application
+```sh
+mvn spring-boot:run
+
+The application will start on http://localhost:8080
+
+## API Endpoints
+1. /api/nocontent
+Method: GET
+Description: Returns HTTP 204 No Content.
+Curl Command
+```sh
+curl -X GET http://localhost:8080/api/nocontent -H "Authorization: Bearer valid-token"
