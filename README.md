@@ -37,7 +37,7 @@ The application will start on http://localhost:8080
        curl -X GET http://localhost:8080/api/nocontent -H "Authorization: Bearer valid-token"
      ```
 
-2. **/api/echo**
+2. **<code>/api/echo</code>**
    * Method: POST
    * Description: Returns HTTP 200 and the original payload.
    * Sample Payload:
@@ -66,7 +66,7 @@ The application will start on http://localhost:8080
             }'
      ```
 
-3. **/api/device**
+3. **<code>/api/device</code>**
    * Method: POST
    * Description: Returns HTTP 200 and only the <code>DeviceId</code> field
    * Sample Payload:
@@ -102,7 +102,7 @@ The application will start on http://localhost:8080
    * Headers:
       * Authorization: <code>Bearer valid-token</code>
       
-2. **/api/echo**
+2. **<code>/api/echo</code>**
    * Method: POST
    * URL: http://localhost:8080/api/echo
    * Headers:
@@ -119,7 +119,7 @@ The application will start on http://localhost:8080
            "FieldC": 123.45
         }
       ```
-3. **/api/device**
+3. **<code>/api/device</code>**
    * Method: POST
    * URL: http://localhost:8080/api/device
    * Headers:
