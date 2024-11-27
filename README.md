@@ -1,6 +1,6 @@
 # SpringBoot-RestAPI
 
-This is a demo Spring Boot application that provides a REST API for handling payloads.
+This is a demo Spring Boot application that provides a REST API for handling payloads.<br><br>
 This `README.md` file provides clear instructions on how to clone the repository, build and run the application, and interact with the API using both curl commands and Postman.
 
 ## Prerequisites
