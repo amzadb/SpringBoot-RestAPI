@@ -29,7 +29,7 @@ mvn spring-boot:run
 The application will start on http://localhost:8080
 
 ## API Endpoints
-1. **/api/nocontent**
+1. **<code>/api/nocontent</code>**
    * Method: GET
    * Description: Returns HTTP 204 No Content.
    * Curl Command:
@@ -96,7 +96,7 @@ The application will start on http://localhost:8080
      ```
 
 ## Using Postman
-1. **/api/nocontent**
+1. **<code>/api/nocontent</code>**
    * Method: GET
    * URL: http://localhost:8080/api/nocontent
    * Headers:
